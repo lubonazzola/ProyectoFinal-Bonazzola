@@ -1,0 +1,64 @@
+[
+    {
+        "id": "producto-01",
+        "titulo": "Bolso Paulina",
+        "imagen": "./images/shop1.jpg",
+        "precio": 25690 
+    },
+
+    {
+        "id": "producto-02",
+        "titulo": "Camisa Florencia",
+        "imagen": "./images/shop2.jpg",
+        "precio": 21999
+    },
+
+    {
+        "id": "producto-03",
+        "titulo": "Short Francisca",
+        "imagen": "./images/shop3.jpg",
+        "precio": 19400 
+    },
+
+    {
+        "id": "producto-04",
+        "titulo": "Body Simona",
+        "imagen": "./images/shop4.jpg",
+        "precio": 22560
+    },
+
+    {
+        "id": "producto-05",
+        "titulo": "Remera California",
+        "imagen": "./images/shop5.jpg",
+        "precio": 14520 
+    },
+
+    {
+        "id": "producto-06",
+        "titulo": "Sandalias Grecia",
+        "imagen": "./images/shop6.jpg",
+        "precio": 110190 
+    },
+
+    {
+        "id": "producto-07",
+        "titulo": "Vestido Micaela",
+        "imagen": "./images/shop7.jpg",
+        "precio": 45777 
+    },
+
+    {
+        "id": "producto-08",
+        "titulo": "Top Jimena",
+        "imagen": "./images/shop8.jpg",
+        "precio": 28324 
+    },
+
+    {
+        "id": "producto-09",
+        "titulo": "Camisa Josefína",
+        "imagen": "./images/shop9.jpg",
+        "precio": 46010 
+    }
+]

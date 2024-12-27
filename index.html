@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Índigo: tienda de ropa femenina con las últimas tendencias y estilos únicos para mujeres.">
+    <meta name="keywords" content="moda femenina, ropa para mujeres, vestidos, blusas, accesorios, estilo, tendencias, moda 2024, tienda de ropa online">
+
+    <link rel="shortcut icon" href="images/logo.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    
+    <link rel="stylesheet" href="css/styles.css">
+
+    <title> Índigo </title>
+</head>
+
+<body>
+    <header class="nav-wrapper">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid d-flex justify-content-between align-items-center">
+                <!-- Logo -->
+                <a class="navbar-brand" href="index.html">
+                    <img src="images/logo.png" alt="Logo de Índigo" title="Índigo: Ropa femenina" class="img-fluid">
+                </a>
+    
+                <!-- Barra de navegación -->
+                <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+                    <ul class="navbar-nav mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active px-3" aria-current="page" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link px-3" href="#newin">New In</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link px-3" href="#shop">Shop</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link px-3" href="#contact">Ubicación</a>
+                        </li>
+                    </ul>
+                </div>
+    
+                <!-- Carrito -->
+                <a class="boton-menu boton-carrito" href="#carrito" aria-label="Ir al carrito de compras">
+                    <i class="bi bi-cart-fill"></i> <span id="numerito" class="numerito"> 0 </span>
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <section>
+        <div class="card text-bg-dark">
+            <img src="images/portada.jpg" class="img-fluid card-img" alt="Imágenes de dos chicas vistiendo ropa de la temporada primavera-verano">
+            <div class="card-img-overlay d-flex flex-column justify-content-center text-center">
+                <h1 class="card-title1 display-4"> Índigo </h1>
+                <p class="card-text lead"> Nueva temporada SS25 </p>
+                <a href="#shop" class="btn btn-custom w-auto mx-auto mt-3" id="btn-shop"> Shop now </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="newinsection" id="newin">
+        <h2 class="h2-newin" aria-labelledby="newin-heading"> NEW IN </h2>
+        
+        <div class="newin-cards" role="region" aria-labelledby="newin-heading">
+            <div class="card-newin" tabindex="0" aria-label="Vestido strapless celeste">
+                <img src="images/newin1.jpg" class="card-img-top" alt="Una mujer rubia posando con un vestido strapless celeste y una cartera de ratán" loading="lazy">
+                <div class="card-body">
+                    <h5 class="card-p"> Vestido Juliana </h5>
+                </div>    
+            </div>
+    
+            <div class="card-newin" tabindex="0" aria-label="Capelina beige ratán">
+                <img src="images/newin2.jpg" class="card-img-top" alt="Una mujer rubia posando con una capelina de ratán, pantalón beige y remera blanca, sosteniendo bolsas al hombro " loading="lazy">
+                <div class="card-body">
+                    <h5 class="card-p"> Capelina Olivia </h5>
+                </div>
+            </div>
+    
+            <div class="card-newin" tabindex="0" aria-label="Vestido de algodón color naranja">
+                <img src="images/newin3.jpg" class="card-img-top" alt="Una mujer castaña luciendo un vestido largo de algodón color naranja" loading="lazy">
+                <div class="card-body">
+                    <h5 class="card-p"> Vestido Amelia </h5>
+                </div>
+            </div>
+        </div>
+    </section>  
+
+    <main class="main-shop" id="shop">
+        
+        <div>
+            <h2 class="h2-shop" id="h2-shop"> SHOP </h2> 
+        </div>
+
+   
+        <div id="contenedorProductos" class="contenedorProductos">
+            <!-- Esto se va a rellenar con JS -->
+        </div>
+
+    </main>
+
+    <section class="carrito" id="carrito">
+        <h2 class="h2-cart">Carrito de compras</h2>
+
+        <div class="contenedor-carrito">
+   
+            <div id="carrito-productos" class="carrito-productos disabled">
+                <!-- Esto se va a rellenar con JS -->
+            </div>
+    
+            <div id="carrito-acciones" class="carrito-acciones disabled">
+                <div class="carrito-acciones-derecha">
+                    <div class="carrito-acciones-total">
+                        <p>Total:</p>
+                        <p id="total">$0</p>
+                    </div>
+                    <button id="carrito-acciones-comprar" class="carrito-acciones-comprar">Comprar ahora</button>
+                </div>
+
+                <div class="carrito-acciones-izquierda">
+                    <button id="carrito-acciones-vaciar" class="carrito-acciones-vaciar">Vaciar carrito</button>
+                </div>
+            
+                <p id="carrito-vacio" class="carrito-vacio"></p>
+
+                <p id="carrito-comprado" class="carrito-comprado disabled"></p>
+            </div> 
+        </div>
+    </section>
+
+    <div class="modal fade" id="modalCompra" tabindex="-1" aria-labelledby="modalCompraLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalCompraLabel">Completa tu compra</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form id="formCompra">
+              <div class="mb-3">
+                <label for="nombre" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="nombre" required>
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" required>
+              </div>
+              <button type="submit" class="btn btn-primary">Confirmar</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="contact-section" id="contact">
+        <div class="h2-contact">
+            <h2> Ubicación </h2>
+        </div>
+    
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d108571.37476317302!2d-60.59736540389822!3d-31.74714600079632!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b44df2b9835231%3A0x554ebde0aa5cfa9a!2zUGFyYW7DoSwgRW50cmUgUsOtb3M!5e0!3m2!1ses!2sar!4v1735272027694!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"> </iframe>
+    </section>
+    
+    <footer>     
+        <div class="footer-section social-icons" role="navigation" aria-label="Redes sociales">
+            <a href="https://www.instagram.com" target="_blank" class="social-icon" aria-label="Visitar Instagram de Índigo: Ropa Femenina" title="Instagram">
+                <span class="mdi--instagram" role="img" aria-hidden="true"></span>
+            </a>
+
+            <a href="https://www.facebook.com" target="_blank" class="social-icon" aria-label="Visitar Facebook de Índigo: Ropa Femenina" title="Facebook">
+                <span class="bi--facebook" role="img" aria-hidden="true"></span>
+            </a>
+           
+            <a href="https://www.tiktok.com" target="_blank" class="social-icon" aria-label="Visitar Tiktok de Índigo: Ropa Femenina" title="Tiktok">
+                <span class="proicons--tiktok" role="img" aria-hidden="true"></span>
+            </a>
+        </div>
+    
+        <div class="footer-section logo">
+            <a href="index.html" title="Ir a la página de inicio">
+                <img src="images/logo.png" alt="Logo de Índigo" title="Índigo: Ropa Femenina">
+            </a>
+        </div>
+    
+        <div class="footer-section copyright">
+            <p> &copy; 2024 Índigo </p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script src="js/main.js"></script>
+    
+</body>
+</html>
